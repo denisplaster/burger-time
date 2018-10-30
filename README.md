@@ -1,6 +1,7 @@
 # burger-time app
 
-Working app <a href="https://dashboard.heroku.com/apps/frozen-basin-15957>Eat-da-Burger!</a>
+Working app <a href="https://dashboard.heroku.com/apps/frozen-basin-15957">Eat-da-Burger!</a>
+<img src="https://photos.smugmug.com/My-First-Gallery/i-9nM9kt6/0/d70a7744/X2/screenshot-X2.png>
 
 Overview
 In this assignment, you'll create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.
