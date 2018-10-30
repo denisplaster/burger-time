@@ -1,0 +1,54 @@
+<div class="row">
+    <center>
+        <!-- Left side (ready to eat) -->
+
+        <div class="col-md-6" id="burger">
+
+            <img src="https://photos.smugmug.com/My-First-Gallery/i-Rd3G5r5/2/df4e7d41/X2/burger-X2.png" alt="">
+
+            <div id="ready_to_eat">
+
+                <!-- Dynamically Insert Ready Burgers Here -->
+
+                {{#each burgers}} {{#unless devoured}}
+                <form action="burger/eat/{{id}}" method="POST">
+                    <div class="input-group">
+                        <li class="form-control">{{id}}. {{burger_name}}</li>
+                        <span class="input-group-btn">
+                            <button onclick="like()" class="btn btn-success devour-button" type="submit">Devour It!</button>
+                        </span>
+                    </div>
+                </form>
+                {{/unless}} {{/each}}
+            </div>
+        </div>
+
+        <!-- Right side (already eaten) -->
+
+        <div class="col-md-6" id="burger_bite">
+
+            <img src="https://photos.smugmug.com/My-First-Gallery/i-hzCCwWT/1/d80c7d75/X2/burger-bite-X2.png" alt="">
+
+            <div id="already_eaten">
+                <!-- Dynamically Insert Eaten Burgers Here -->
+
+                {{#each burgers}} {{#if this.devoured}}
+                <div class="input-group">
+                    <li class="form-control">{{this.id}}. {{this.burger_name}}</li>
+                    <span class="input-group-btn">
+                        <button onclick="dont_like()" class="btn btn-info whine-button" type="button">
+                            <i class="far fa-thumbs-up"></i>
+                        </button>
+                    </span>
+                    <span class="input-group-btn">
+                        <button class="btn btn-info whine-button" type="button">
+                            <i class="far fa-thumbs-down"></i>
+                        </button>
+                    </span>
+                </div>
+                {{/if}} {{/each}}
+                <br>
+            </div>
+        </div>
+    </center>
+</div>

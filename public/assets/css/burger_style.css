@@ -1,0 +1,46 @@
+body {
+    background-image: url("https://preview.redd.it/z8hqsckdksk01.jpg?width=960&crop=smart&auto=webp&s=82a66b8b33bf0ef59baf16498b17da8e916e1c48"), 0.3;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    
+}
+html {
+    height: 100%;
+  }
+
+* {
+    border-radius: 0 !important;
+  }
+
+.jumbotron {
+    background: rgb(231, 228, 55);
+    background: rgba(231, 228, 55, 0.0); 
+}
+
+img {
+    height: 50%;
+    width: 50%;
+}
+
+p {
+    font-size: 4em;
+    text-align: center;
+    font-family: 'Stalinist One', cursive;
+}
+
+.nav {
+    background-color: red;
+}
+
+.footer {
+    background-image: url("https://photos.smugmug.com/My-First-Gallery/i-dcsDjvT/0/3e32ca5e/X3/food_footer-X3.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 4em;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    
+}
