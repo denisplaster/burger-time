@@ -1,7 +1,4 @@
 body {
-    background-image: url("https://preview.redd.it/z8hqsckdksk01.jpg?width=960&crop=smart&auto=webp&s=82a66b8b33bf0ef59baf16498b17da8e916e1c48"), 0.3;
-    background-repeat: no-repeat;
-    background-size: 100%;
     min-height: 100%;
     display: grid;
     grid-template-rows: 1fr auto;
@@ -16,7 +13,6 @@ html {
   }
 
 .jumbotron {
-    background: rgb(231, 228, 55);
     background: rgba(231, 228, 55, 0.0); 
 }
 
@@ -32,7 +28,7 @@ p {
 }
 
 .nav {
-    background-color: red;
+    background-color: #df6236;
 }
 
 .footer {
@@ -42,5 +38,5 @@ p {
     height: 4em;
     grid-row-start: 2;
     grid-row-end: 3;
-    
 }
+

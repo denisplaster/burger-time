@@ -1,3 +1,4 @@
+Ç
 <div class="row">
     <center>
         <!-- Left side (ready to eat) -->
@@ -15,7 +16,7 @@
                     <div class="input-group">
                         <li class="form-control">{{id}}. {{burger_name}}</li>
                         <span class="input-group-btn">
-                            <button onclick="like()" class="btn btn-success devour-button" type="submit">Devour It!</button>
+                            <button class="btn btn-success devour-button" type="submit">Devour It!</button>
                         </span>
                     </div>
                 </form>
@@ -36,19 +37,32 @@
                 <div class="input-group">
                     <li class="form-control">{{this.id}}. {{this.burger_name}}</li>
                     <span class="input-group-btn">
-                        <button onclick="dont_like()" class="btn btn-info whine-button" type="button">
+                        <button id="like" class="btn btn-info whine-button" type="button">
                             <i class="far fa-thumbs-up"></i>
                         </button>
                     </span>
                     <span class="input-group-btn">
-                        <button class="btn btn-info whine-button" type="button">
+                        <button id="dont_like" class="btn btn-info whine-button" type="button">
                             <i class="far fa-thumbs-down"></i>
                         </button>
                     </span>
                 </div>
                 {{/if}} {{/each}}
                 <br>
+                <br>
             </div>
         </div>
     </center>
 </div>
+<script>
+    document.querySelectorAll('#like').forEach(function (e) {
+        e.addEventListener('click', function () {
+            this.style.backgroundColor = "green";
+        })
+    });
+    document.querySelectorAll('#dont_like').forEach(function (e) {
+        e.addEventListener('click', function () {
+            this.style.backgroundColor = "red";
+        })
+    });
+</script>
